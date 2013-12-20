@@ -6,7 +6,55 @@ class accounts_controller extends base_controller {
         parent::__construct();
     }
 
-    public function createuser()
+    public function index()
+    {
+        $this->template->content = View::instance('v_index_index');
+        $this->template->title = "Ego Matrix";
+        echo $this->template;
+    }
+
+    public function login($error)
+    {
+        $this->template->content = View::instance('v_accounts_login');
+        $this->template->title = "Login";
+        $this->template->content->error = $error;
+        echo $this->template;
+    }
+
+    public function login_go()
+    {
+        // sanitize user entry
+        $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+
+        // hash password to compare with token
+        $_POST['password'] = sha1(PASSWORD_SALT . $_POST['password']);
+
+        // search database for user, set a browser cookie
+        $q = "SELECT token 
+        FROM users
+        WHERE username = '" . $_POST['username'] . "' 
+        AND password = '" . $_POST['password'] . "'";
+        $token = DB::instance(DB_NAME)->select_field($q);
+        if (!$token)
+        {
+            Router::redirect("/accounts/login/error/fail");
+        }
+        else
+        {
+            setcookie("token", $token, strtotime('+1 year') , '/');
+            Router::redirect("/content/profile");
+        }
+    }        
+
+    public function newuser($error)
+    {
+        $this->template->content = View::instance('v_accounts_newuser');
+        $this->template->title = "Create Account";
+        $this->template->content->error = $error;
+        echo $this->template;
+    }
+
+    public function newuser_go()
     {
 
         // get cognitive functions associated with the
@@ -58,7 +106,7 @@ class accounts_controller extends base_controller {
 
         // check for duplicate username
         $q = "SELECT username 
-        FROM ego_matrix 
+        FROM users
         WHERE username = '" . $username . "'";
         $result = DB::instance(DB_NAME)->select_row($q);
         if ($result)
@@ -73,27 +121,13 @@ class accounts_controller extends base_controller {
             }
             else
             {
-                $id = DB::instance(DB_NAME)->insert("ego_matrix", $_POST);
-                Router::redirect('/');
+                $id = DB::instance(DB_NAME)->insert("users", $_POST);
+                Router::redirect('/index');
             }
         }
 
     }
 
-    public function index()
-    {
-        $this->template->content = View::instance('v_index_index');
-        $this->template->title = "Ego Matrix";
-        echo $this->template;
-    }
-
-    public function newuser($error)
-    {
-        $this->template->content = View::instance('v_accounts_newuser');
-        $this->template->title = "Create Account";
-        $this->template->content->error = $error;
-        echo $this->template;
-    }
 
 }
 ?>

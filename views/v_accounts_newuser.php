@@ -4,7 +4,7 @@
 </div>
 <div id="main">
 <h1>Ego Matrix</h1>
-<form method="POST" action="/accounts/createuser" class="center">
+<form method="POST" action="/accounts/newuser_go" class="center">
 	<span class="form">Username: </span><input type="text" name="username"><br/>
 	<span class="form">Password: </span><input type="password" name="password"><br/><br/>
 	<input type="radio" name="gender" value="female">Female
