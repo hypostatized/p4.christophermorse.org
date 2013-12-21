@@ -44,6 +44,15 @@ class accounts_controller extends base_controller {
             setcookie("token", $token, strtotime('+1 year') , '/');
             Router::redirect("/content/profile");
         }
+    }
+
+    public function logout() 
+    {
+        $new_token = sha1(TOKEN_SALT . $this->user->username . Utils::generate_random_string());
+        $data = Array("token" => $new_token);
+        DB::instance(DB_NAME)->update("users", $data, "WHERE username = '" . $this->user->username . "'");
+        setcookie("token", "", strtotime('-1 year') , '/');
+        Router::redirect("/");
     }        
 
     public function newuser($error)

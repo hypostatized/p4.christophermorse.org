@@ -10,11 +10,11 @@
 <?php
 	$functions = array
             (
-            	array("Se", "#A7174A", "Extraverted Sensing", "notice sensory data in the environment", "trust your instincts and take action relevant to the moment and current context"),
+            	array("Se", "#CFE958", "Extraverted Sensing", "notice sensory data in the environment", "trust your instincts and take action relevant to the moment and current context"),
             	array("Ne", "#3F099D", "Extraverted Intuition", "notice abstract patterns as they emerge", "shift a situation&#39;s dynamics and explore imaginative potential possibilities"),
             	array("Te", "#0793C9", "Extraverted Thinking", "follow steps, points and time tables", "create structure, reason by measures and evidence, and implement complex plans"),
             	array("Fe", "#8707A8", "Extraverted Feeling", "honor others&#39; needs and preferences", "connect with people by sharing values and taking on their needs as yours"),
-            	array("Si", "#CFE958", "Introverted Sensing", "recall tangible data and experiences", "stabilize a situation by comparing it to what is expected, known and reliable"),
+            	array("Si", "#A7174A", "Introverted Sensing", "recall tangible data and experiences", "stabilize a situation by comparing it to what is expected, known and reliable"),
             	array("Ni", "#FABB41", "Introverted Intuition", "receive &#39;ah-ha&#39; insights and realizations", "persue a greater level of awareness to transform who you are and how you think"),
             	array("Ti", "#FD5126", "Introverted Thinking", "adhere to definitions and impersonal principles", "analyze a problem using a framework, and find an angle or leverage by which to solve it"),
             	array("Fi", "#FDFD62", "Introverted Feeling", "adhere to personal beliefs about what&#39;s important", "evalute situations and choose what you believe is congruent with your personal identity")

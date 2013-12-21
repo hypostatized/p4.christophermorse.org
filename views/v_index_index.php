@@ -10,7 +10,7 @@
 	<span class="form">Password: </span><input type="password" name="password"><br/><br/>
 	<input type="submit" value="Log In">
 </form>
-<p class="center"><a href="">Create Account</a></p>
+<p class="center"><a href="/accounts/newuser">Create Account</a></p>
 </div>
 <div id="hera">
 <img src="/images/hera.png" class="titleimg">

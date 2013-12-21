@@ -160,6 +160,18 @@ h3 {
     z-index: 10;
 }
 
+#visualizeCommunity {
+	margin: auto;
+	position: relative;
+	top: 100px;
+	width: 75%;
+}
+
+#visualizeCommunity table {
+	height: 100px;
+	padding: 0px;
+}
+
 #zeus {
 	height: auto;
 	left: 0;
@@ -169,7 +181,7 @@ h3 {
 }
 
 .Se {
-	background-color: #A7174A;
+	background-color: #CFE958;
 	color: #999;
 	height: 50px;
 	width: 50px;
@@ -197,7 +209,7 @@ h3 {
 }
 
 .Si {
-	background-color: #CFE958;
+	background-color: #A7174A;
 	color: #999;
 	height: 50px;
 	width: 50px;
