@@ -10,6 +10,13 @@ class content_controller extends base_controller {
 		parent::__construct();
 	} 
 
+	public function functions()
+	{
+		$this->template->content = View::instance('v_content_functions');
+        $this->template->title = "Overview of Cognitive Processes";
+        echo $this->template;
+	}
+
 	public function profile()
 	{
 		$this->template->content = View::instance('v_content_profile');

@@ -202,7 +202,7 @@
 	<p>This color chart depicts the proportion of each cognitive function as it is represented by users of Ego Matrix. Each time this page reloads the chart dynamically generates based on the number of users and their personality types.</p>
 	<p>Currently the dominant cognitive functions represented by the Ego Matrix community are <span class="fancy" style="color:<?=$computed[0]["hex"];?>"><?=$computed[0]["name"];?></span> and <span class="fancy" style="color:<?=$computed[1]["hex"];?>"><?=$computed[1]["name"];?></span>.</p>
 	<p>In contrast, <span class="fancy" style="color:<?=$computed[6]["hex"];?>"><?=$computed[6]["name"];?></span> and <span class="fancy" style="color:<?=$computed[7]["hex"];?>"><?=$computed[7]["name"];?></span> are underrepresented here.</p>
-	<p>When distributed amongst a group (professional working group, friend group, family, etc.), Ego Matrix can help illuminate cognitive approaches to problem solving that may not be well represented or even marginalized. Exploring these underrepresented areas can encourage harmonious working relations and give a voice to individuals who have a different perspective not widely understood by the majority.</p>
+	<p>When distributed amongst a group (professional working group, friend group, family, etc.), Ego Matrix can help illuminate cognitive approaches to understanding the world that may not be well represented or even marginalized. Exploring these underrepresented areas can encourage harmonious working relations and give a voice to individuals who have a different perspective not widely shared by the majority. Acknowledging the well represented cognitive functions in the chart can reveal more about inherent cognitive strengths the group shares.</p>
 </div>
 
 

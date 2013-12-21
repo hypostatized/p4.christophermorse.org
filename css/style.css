@@ -61,6 +61,12 @@ body {
 	position: absolute;
 }
 
+#cog_table2 {
+	font-size: 1em;
+	left: 5%;
+	position: absolute;
+}
+
 #content_main {
 	bottom: 50px;
 	position: relative;
@@ -71,6 +77,28 @@ body {
 .fancy {
 	font-size: 1.5em;
 }
+
+#functionsChart {
+	width: 100%;
+}
+
+#functionsChart table td {
+	padding: 15px;
+}
+
+#functionDesc {
+	left: 33%;
+	margin-left: 5%;
+	margin-right: 5%;
+	position: absolute;
+}
+
+#functionDesc h1, #functionDesc h2 {
+	color: #999999;
+	margin-top: 0px;
+	text-align: left;
+}
+
 #login {
 	position: relative;
 	text-align: center;

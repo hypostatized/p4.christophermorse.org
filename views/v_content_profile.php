@@ -108,7 +108,7 @@ $(".inf").on('click', function() {
 
 <div id="clickFunction">
 <br/>
-<h3>Please click each function to learn more about your personal cognitive processes.</h3>
+<h3>&larr; Please click each function to learn more about your personal cognitive processes.</h3>
 <p>Each cognitive process can be engaged in a basic, unsophisticated way reflecting our natural human capabilities. Almost everyone can engage each process in some basic way. Beyond this, you will engage some cognitive processes in a more sophisticated, developed way. This is usually the result of innate preference plus lifelong growth and practice, which equals development.</p>
 <p>Source: <a href="http://www.keys2cognition.com/cgjung.htm">Keys2Cognition</a></p>
 </div>
