@@ -7,15 +7,50 @@ a:hover {
 	color: #FF6600;
 }
 
+#badge {
+	float: left;
+	position: absolute;
+	width: 33%;
+}
+
 body {
 	background-color: #FFFFFF;
 	color: #333;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
+#border {
+	background-image:url('/images/border.png');
+	bottom: 0px;
+	height: 87px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+}
+
 .center {
 	margin: auto;
 	text-align: center;
+}
+
+#clickFunction {
+	left: 66%;
+	position: absolute;
+	right: 100px;
+}
+
+#clickFunction h2 {
+	text-align: left;
+}
+
+#clickFunction p {
+	text-align: justify;
+}
+
+#cog_table {
+	font-size: 1em;
+	left: 33%;
+	position: absolute;
 }
 
 #content_main {
@@ -32,11 +67,20 @@ body {
 
 h1 {
 	font-size: 3em;
+	margin-bottom: 0px;
 	text-align: center;
 }
 
 h2 {
 	font-size: 2em;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+h3 {
+	margin-bottom: 0px;
+	margin-top: 0px;
 	text-align: center;
 }
 
@@ -46,6 +90,12 @@ h2 {
 	position: absolute;
 	text-align: center;
 	width: 33.33%;
+}
+
+#info {
+	left: 33%;
+	position: absolute
+	width: auto;
 }
 
 #main {
@@ -66,9 +116,48 @@ h2 {
 	text-align: justify;
 }
 
+#nav {
+    background-color: #000000;
+    border-radius: 10px;
+    color: #FFF;
+    height: 45px;
+    margin: auto;
+    padding-top: 5px;
+    min-width: 800px;
+    position: relative;
+    width: 70%;
+}
+
+#nav a:link, #nav a:visited, #nav a:active {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #999999;
+}
+
+#nav ul {
+    text-align: center;
+    z-index: 10;
+}
+
+#nav li {
+    display: inline;
+    font-size: 1.3em;
+    margin-right: 50px;
+}
+
 .titleimg {
 	height: 75%;
 	width: 75%;
+}
+
+#top {
+    position: fixed;
+    top: -18px;
+    width: 100%;
+    z-index: 10;
 }
 
 #zeus {
@@ -78,3 +167,64 @@ h2 {
 	text-align: center;
 	width: 33%;
 }
+
+.Se {
+	background-color: #A7174A;
+	color: #999;
+	height: 50px;
+	width: 50px;
+}
+
+.Ne {
+	background-color: #3F099D;
+	color: #999;
+	height: 50px;
+	width: 50px;
+}
+
+.Te {
+	background-color: #0793C9;
+	color: #999;
+	height: 50px;
+	width: 50px;	
+}
+
+.Fe {
+	background-color: #8707A8;
+	color: #999;
+	height: 50px;
+	width: 50px;	
+}
+
+.Si {
+	background-color: #CFE958;
+	color: #999;
+	height: 50px;
+	width: 50px;
+}
+
+.Ni {
+	background-color: #FABB41;
+	color: #999;
+	height: 50px;
+	width: 50px;	
+}
+
+.Ti {
+	background-color: #FD5126;
+	color: #999;
+	height: 50px;
+	width: 50px;
+}
+
+.Fi {
+	background-color: #FDFD62;
+	color: #999;
+	height: 50px;
+	width: 50px;	
+}
+
+
+
+
+
