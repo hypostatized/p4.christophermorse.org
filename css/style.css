@@ -7,6 +7,14 @@ a:hover {
 	color: #FF6600;
 }
 
+#analysis {
+	margin-left: 25%;
+	margin-right: 25%;
+	position: absolute;
+	text-align: justify;
+	top: 250px;
+}
+
 #badge {
 	float: left;
 	position: absolute;
@@ -60,6 +68,9 @@ body {
 	width: 100%;
 }
 
+.fancy {
+	font-size: 1.5em;
+}
 #login {
 	position: relative;
 	text-align: center;
