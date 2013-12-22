@@ -67,6 +67,7 @@ class accounts_controller extends base_controller {
         $this->template->content = View::instance('v_accounts_newuser');
         $this->template->title = "Create Account";
         $this->template->content->error = $error;
+        $this->template->content->username = $username;
         echo $this->template;
     }
 
