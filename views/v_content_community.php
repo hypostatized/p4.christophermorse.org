@@ -231,6 +231,7 @@ array_multisort($value, SORT_DESC, $computed);
 
 
 ?>
+<div id="vizArea">
 <div id="visualizeCommunity">
   <table>
 	<tr>
@@ -308,6 +309,7 @@ array_multisort($value, SORT_DESC, $computed);
       </td>
   </tr>
   </table>
+</div>
 </div>
 
 <div id="analysis">
