@@ -126,7 +126,7 @@ class accounts_controller extends base_controller {
         $result = DB::instance(DB_NAME)->select_row($q);
         if ($result)
         {
-            Router::redirect('/accounts/newuser/username');
+            Router::redirect('/accounts/newuser/error/username');
         }
         else
         {
