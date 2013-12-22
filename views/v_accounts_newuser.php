@@ -81,6 +81,7 @@
       <input type="submit" value="Create Account">
     </form>
     <?php if(isset($error)) echo "<p class='error'>Error. Please fill out all fields, and your password must be longer than 3 characters.</p>" ?>
+    <?php if(isset($username)) echo "<p class='error'>That username already exists.</p>" ?>
     <br/>
     <br/>
   </div>
