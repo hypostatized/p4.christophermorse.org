@@ -3,7 +3,7 @@
 <?php else: ?>
 <div id="content_main">
   <div id="zeus">
-    <img src="/images/zeus.png" class="titleimg" alt="hera">
+    <img src="/images/zeus.png" class="titleimg" alt="zeus">
   </div>
   <div id="main">
     <h1>
@@ -38,11 +38,16 @@
       <br/>
       <input type="submit" value="Log In">
     </form>
-    <p class="center">
-      <a href="/accounts/newuser">
-        Create Account
-      </a>
-    </p>
+    <?php if(isset($error)) echo "
+<p class='error'>
+Error, please try again.
+</p>
+" ?>
+  <p class="center">
+    <a href="/accounts/newuser">
+      Create Account
+    </a>
+  </p>
   </div>
   <div id="hera">
     <img src="/images/hera.png" class="titleimg" alt="hera">

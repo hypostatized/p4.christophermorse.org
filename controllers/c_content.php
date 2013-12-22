@@ -8,6 +8,11 @@ class content_controller extends base_controller {
 	public function __construct() 
 	{
 		parent::__construct();
+
+        # Make sure user is logged in if they want to use anything in this controller
+        if(!$this->user) {
+            Router::redirect('/accounts/login');
+        }		
 	} 
 
 	public function functions()

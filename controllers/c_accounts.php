@@ -3,12 +3,19 @@ class accounts_controller extends base_controller {
 
 	public function __construct()
     {
-        parent::__construct();
+        parent::__construct();    
     }
 
     public function index()
     {
         $this->template->content = View::instance('v_index_index');
+        $this->template->title = "Ego Matrix";
+        echo $this->template;
+    }
+
+    public function info()
+    {
+        $this->template->content = View::instance('v_accounts_info');
         $this->template->title = "Ego Matrix";
         echo $this->template;
     }
@@ -37,7 +44,7 @@ class accounts_controller extends base_controller {
         $token = DB::instance(DB_NAME)->select_field($q);
         if (!$token)
         {
-            Router::redirect("/accounts/login/error/fail");
+            Router::redirect("/accounts/login/error");
         }
         else
         {
@@ -111,7 +118,6 @@ class accounts_controller extends base_controller {
         // variables to test for form errors
         $username = $_POST['username'];
         $password = $_POST['password'];
-        $gender = $_POST['gender'];
 
         // check for duplicate username
         $q = "SELECT username 
@@ -124,7 +130,7 @@ class accounts_controller extends base_controller {
         }
         else
         {
-            if (!$username || !$password || !$gender || !$typology)
+            if (!$username || !$password || !$typology || strlen($password) < 3)
             {
                 Router::redirect('/accounts/newuser/error');
             }
